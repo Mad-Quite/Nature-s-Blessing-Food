@@ -169,16 +169,17 @@ body {
 
 .about {
     padding: 60px;
+    display: flex;
     text-align: center;
     background: white;
 }
 
-.about h2 {
+.about h2,.about2 {
     font-size: 35px;
     margin-bottom: 20px;
 }
 
-.about p {
+.about p,.about2 {
     width: 80%;
     margin: auto;
     font-size: 18px;
@@ -194,28 +195,66 @@ body {
 /* Hello, my name is Shobhit Kumar. I am 18 years old and currently a student of BCA (Bachelor of Computer Applications). I am passionate about learning computer technologies and improving my programming and web development skills. I enjoy exploring new ideas in the field of IT and aim to build a successful career in the technology industry.*/
 
 .contactSection{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: transparent;
+    border: #cc000000 solid 2px;
+    height: 335px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.contactSection:hover{
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.568);
 }
 
 .contact-box{
     border: #2e8b57 2px solid;
     border-radius: 20px;
-    height: auto;
-    width: 250px;
+    height: 90px;
+    width: 300px;   
+    padding-top: 15px; 
     text-align: center;
+    vertical-align: middle;
     color: #2e8b57;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     transition: 0.3s;
+    position: relative;
+    margin: 10px;
+    cursor:pointer;
+}
+
+.contact-box p{
+    margin: 0;
+    text-align: center;
+    width: 300px;
 }
 
 .contact-box:hover{
     box-shadow: 0 7px 12px rgba(0, 0, 0, 0.568);
     transform: translateY(-3px);
 
+}
+
+.about1{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+
+.paragraph{
+    max-width: 70vw;
+    margin: 10px;
+}
+
+.about2{
+    text-align: center;
 }
 
 /* Hello, my name is Shobhit Kumar. I am 18 years old and currently a student of BCA (Bachelor of Computer Applications). I am passionate about learning computer technologies and improving my programming and web development skills. I enjoy exploring new ideas in the field of IT and aim to build a successful career in the technology industry.*/
