@@ -105,12 +105,12 @@
         </div>
     </div>
     <script>
-        function copyNumber(number) {
-            navigator.clipboard.writeText(number);
-            document.getElementById("number").innerText = "Copied: " + number;
-        }
-
-    </script>
+function copyNumber(number) {
+    navigator.clipboard.writeText(number);
+    document.getElementById("number").innerText = "Copied: " + number;
+    window.location.href = "tel:" + number;
+}
+</script>
 </body>
 
 </html>
