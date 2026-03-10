@@ -78,9 +78,9 @@
                 </p>
             </div>
             <div class="contactSection">
-                <div class="contact-box" onclick="func1()">
+                <div class="contact-box" onclick="copyNumber('9897255652')">
                     <h4>📞 Call Us</h4>
-                    <p  id="number" >+91 9897255652</p>
+                    <p id="number">+91 9897255652</p>
                 </div>
                 <div class="contact-box" onclick="location.href='https://maps.app.goo.gl/yTkgTGCmMgheuywQ9'">
                     <h4>📍 Location</h4>
@@ -105,10 +105,11 @@
         </div>
     </div>
     <script>
-        function func1()
-        {
-            document.getElementById("number").innerHTML = "✓✓ Copied Success";
+        function copyNumber(number) {
+            navigator.clipboard.writeText(number);
+            document.getElementById("number").innerText = "Copied: " + number;
         }
+
     </script>
 </body>
 
