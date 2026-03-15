@@ -28,11 +28,15 @@
                     <h1>NATURE's BLESSING</h1>
                 </div>
                 <div class="profile">
-                    <div class="">
-                        <a href="login.html"><p>Login</p></a>
+                    <div class="btn">
+                        <a href="login.html">
+                            <p>Login</p>
+                        </a>
                     </div>
-                    <div class="">
-                        <a href="signup.html"><p>SignUp</p></a>
+                    <div class="btn">
+                        <a href="signup.html">
+                            <p>SignUp</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -40,9 +44,9 @@
 
         <section class="homeSection">
             <div>
-                <h1>Thanks for Conatacting</h1>
+                <h1>Thanks for Contacting</h1>
                 <p>Enjoy the taste of quality fast food</p>
-                <button onclick="location.href='index.html'">Contact Now</button>
+                <button onclick="location.href='#Contact'">Contact Now</button>
             </div>
         </section>
         <section class="about1">
@@ -80,7 +84,7 @@
                     service.
                 </p>
             </div>
-            <div class="contactSection">
+            <div class="contactSection" id="Contact">
                 <div class="contact-box" onclick="copyNumber('9897255652')">
                     <h4>📞 Call Us</h4>
                     <p id="number">+91 9897255652</p>
@@ -108,12 +112,20 @@
         </div>
     </div>
     <script>
-function copyNumber(number) {
-    navigator.clipboard.writeText(number);
-    document.getElementById("number").innerText = "Copied: " + number;
-    window.location.href = "tel:" + number;
-}
-</script>
+        function copyNumber(number) {
+
+            // copy number to clipboard
+            navigator.clipboard.writeText(number);
+
+            // show message
+            document.getElementById("number").innerText = "Copied: " + number;
+
+            // open phone dialer
+            window.location.href = "tel:" + number;
+        }
+    </script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
